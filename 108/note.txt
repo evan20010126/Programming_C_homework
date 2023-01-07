@@ -1,0 +1,18 @@
+stdin: 鍵盤
+
+fflush(stdin)
+
+<stdio>
+fgets: 從目前位置讀取一整行，直到enter
+char buf[100];
+fgets(buf, 100, stdin)
+
+getchar(): 讀一個字元，放到變數內(建議用int接)，若讀到串流結束了，會讀到-1(EOF)
+    Ex. variable = getchar();
+// 還是需要enter
+putchar(int): 將數字轉成字元內碼呈現到螢幕 
+
+<conio.h>
+// 與getchar()不同，不需要enter
+getche(): 讀取一個字元，並顯示在螢幕上
+getch(): 讀取一個字元，但不顯示在螢幕上
